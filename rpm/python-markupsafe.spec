@@ -5,7 +5,7 @@ Summary: Implements a XML/HTML/XHTML Markup safe string for Python
 Group: Development/Languages
 License: BSD
 URL: http://pypi.python.org/pypi/MarkupSafe
-Source0: MarkupSafe-%{version}.tar.gz
+Source0: %{name}-%{version}.tar.gz
 
 BuildRequires: python-devel python-setuptools
 
@@ -13,7 +13,7 @@ BuildRequires: python-devel python-setuptools
 A library for safe markup escaping.
 
 %prep
-%setup -q -n markupsafe-%{version}
+%setup -q -n %{name}-%{version}
 
 %build
 cd markupsafe
